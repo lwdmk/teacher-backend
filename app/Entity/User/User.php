@@ -44,6 +44,9 @@ class User extends Authenticatable
     public const GRADE_A = 'A';
     public const GRADE_B = 'B';
     public const GRADE_C = 'C';
+    public const GRADE_D = 'Г';
+    public const GRADE_E = 'Д';
+    public const GRADE_F = 'Е';
 
     protected $fillable = [
         'name',
@@ -77,7 +80,12 @@ class User extends Authenticatable
     public static function gradeList(): array
     {
         return [
-           5 => 5
+           5 => 5,
+           6 => 6,
+           7 => 7,
+           8 => 8,
+           9 => 9,
+           10 => 10,
         ];
     }
 
@@ -90,6 +98,9 @@ class User extends Authenticatable
            self::GRADE_A => 'A',
            self::GRADE_B => 'Б',
            self::GRADE_C => 'В',
+           self::GRADE_D => 'Г',
+           self::GRADE_E => 'Д',
+           self::GRADE_F => 'Е',
         ];
     }
 

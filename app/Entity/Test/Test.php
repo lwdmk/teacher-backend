@@ -25,7 +25,7 @@ class Test extends Model
     protected $table = 'test';
 
     protected $fillable = [
-        'title', 'type', 'grade', 'duration', 'short', 'description'
+        'title', 'type', 'grade', 'duration', 'description'
     ];
 
     /**

@@ -53,14 +53,6 @@
         </div>
 
         <div class="form-group">
-            <label for="short" class="col-form-label">Анонс</label>
-            <textarea id="short" class="form-control {{ $errors->has('short') ? ' is-invalid' : '' }}" rows="5" name="short">{{ old('short') }}</textarea>
-            @if ($errors->has('short'))
-                <span class="invalid-feedback"><strong>{{ $errors->first('short') }}</strong></span>
-            @endif
-        </div>
-
-        <div class="form-group">
             <label for="description" class="col-form-label">Описание</label>
             <textarea id="description" class="form-control {{ $errors->has('description') ? ' is-invalid' : '' }}" rows="5" name="description">{{ old('description') }}</textarea>
             @if ($errors->has('description'))
